@@ -1,0 +1,16 @@
+
+SKI Combinators
+
+I = *ii
+K = *i*i*ii
+S = *i*i*i*ii
+
+CHURCH BOOLEANS
+
+tru = K // tru x y = * * K x y
+fls = * K I // fls x y = * * * K I x y
+
+and = * * S S * K * K fls // and x y = * * * * S S * K * K fls x y
+or = * * S I * K tru // or x y = * * * * S I * K tru x y
+not = * * S * * S I * K fls * K tru // not x = * * * S * * S I * K fls * K tru x
+

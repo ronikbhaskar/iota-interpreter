@@ -23,11 +23,11 @@ As such, the interpreter makes use of the intermediate forms `S` and `K`, where 
 In addition to the above evaluation rules, I added the following congruence rules:
 
 ```
-     t1 --> t1`
+     t1 --> t1'
 --------------------
 * t1 t2 --> * t1' t2
 
-     t2 --> t2`
+     t2 --> t2'
 --------------------
 * nf t2 --> * nf t2'
 ```
